@@ -1,6 +1,17 @@
+import { Observable } from 'rxjs';
 
+// creacion poco comun de observables
+// const obs$ = Observable.create();
 
-console.log('Hola Mundo!');
+const obs$ = new Observable<string>(subs => {
+    subs.next('Hola');
+
+    subs.complete();
+});
+
+obs$.subscribe((resp:string) => {
+    console.log(resp);
+});
 
 
 
