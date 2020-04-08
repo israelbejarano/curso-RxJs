@@ -19,6 +19,10 @@ const intervalo$ = new Observable<number>( subs => {
 
 });
 
+// cuando la data es producida por el observable en sí mismo, se considera COLD OBSERVABLE.
+// Pero cuando la data es producida FUERA delobservable es llamado HOT OBSERVABLE
+// Por tanto un subject nos permite convertir un cold observable en un hot observable
+
 /**
 Subject es un obervable que tiene las siguientes caracteristicas:
  * 1- Casteo múltiple
