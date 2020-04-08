@@ -1,3 +1,4 @@
+// para probar los ejercicios copiar y pegar aquí y ejecutar
 import { Observable, Observer } from 'rxjs';
 
 const observer: Observer<any> = {
